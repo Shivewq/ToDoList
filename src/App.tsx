@@ -1,12 +1,17 @@
-import React from 'react';
-import './App.css';
+import React, { FC } from 'react';
+import { headStyles, bodyStyle } from './components/styles/styles';
+//Import Components
+import Form from "./components/Form";
 
-function App() {
+
+const App: FC = () => {
   return (
-    <div>
-      <h1>todolist</h1>
-    </div>
-
+    <body style={bodyStyle} className="app">
+     <div className="header">
+       <h1 style={headStyles}>Tasks To Do</h1>
+     </div>
+     <Form/>
+    </body>
   );
 }
 
